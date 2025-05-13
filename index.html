@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide to Web Apps & Databases</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🌐 Guide to Web Applications & Databases</h1>
+        <p>Created by a future web dev rockstar 🤘</p>
+    </header>
+
+    <section id="intro">
+        <h2>What Are Web Applications?</h2>
+        <p>Web applications are dynamic websites that interact with users and often store data in databases. Think Gmail, Netflix, or your student portal. They combine front-end magic (HTML, CSS, JS) with back-end brains (databases + servers).</p>
+        <img src="ai-image1.png" alt="Illustration of web app layers" />
+    </section>
+
+    <section id="databases">
+        <h2>How Web Apps Talk to Databases</h2>
+        <p>Web apps use programming languages (like JavaScript or Python) and database languages (like SQL) to send, receive, and manipulate data. Example: submitting a form to create a user profile sends your data to a back-end database like MySQL or MongoDB.</p>
+        <img src="ai-image2.png" alt="Data flow from frontend to backend" />
+        <button onclick="revealMore()">Click to Learn More!</button>
+        <div id="more-info" style="display:none;">
+            <p>Cloud services like AWS and Google Cloud host these databases. This enables apps to scale and stay secure. SQL (Structured Query Language) helps developers fetch, update, and delete data efficiently.</p>
+        </div>
+    </section>
+
+    <section id="use-cases">
+        <h2>Use Cases: Intranet vs Internet</h2>
+        <ul>
+            <li><strong>Intranet:</strong> Internal tools for employees like HR portals, project dashboards, or internal chat systems.</li>
+            <li><strong>Internet:</strong> Public-facing apps like online stores, banking platforms, or educational websites.</li>
+        </ul>
+        <img src="ai-image3.png" alt="Intranet vs Internet examples" />
+    </section>
+
+    <footer>
+        <p>🚀 Powered by HTML, CSS, and a little JavaScript sparkle ✨</p>
+    </footer>
+
+    <script>
+        // This function toggles visibility of extra content
+        function revealMore() {
+            const info = document.getElementById("more-info");
+            info.style.display = info.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
